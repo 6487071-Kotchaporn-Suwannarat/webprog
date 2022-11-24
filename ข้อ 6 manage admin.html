@@ -1,101 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <!--กำหนดชื่อ title ของ website-->
-        <title>Manage Admin</title>
-        <!--external css-->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="manage product&service.css">
-        <link rel="stylesheet" href="gr10.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <!--internal css-->
-        <style>
-            .checked {
-                color: orange;
-            }
-        </style>
-    </head>
-    
-    <body>
-         <!--กำหนด header เป็นรูปภาพ logo ของร้าน-->
-        <header>
-            <img src="Pior.jpg" alt="HTML5 Icon" width="100" height="100">
-        </header>
 
-        <!--ใช้คำสั่ง nav ในการกำหนดเเถบต่างๆ-->
-        <nav>
-            <a href="ข้อ 1 homepage.html"><i class="hm"></i>HOME</a>
-            <a href="ข้อ 5 manage product&service.html"><i class="am"></i>MANAGE PRODUCT & SERVICE</a>
-            <a href="ข้อ 6 manage admin.html"><i class="pa"></i>MANAGE ADMIN</a>
+<head>
+    <!--กำหนดชื่อ title ของ website-->
+    <title>Manage Admin</title>
+    <!--external css-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="manage product&service.css">
+    <link rel="stylesheet" href="gr10.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--internal css-->
+    <style>
+        .checked {
+            color: orange;
+        }
+    </style>
+</head>
 
-            <div class="log">
-                <form action = "#">
-                    <a href="ข้อ 2 login.html"><input class="submit_class" type="button" value="Login"></a>
-                </form>
-            </div>
-        </nav>
+<body>
+    <!--กำหนด header เป็นรูปภาพ logo ของร้าน-->
+    <header>
+        <img src="Pior.jpg" alt="HTML5 Icon" width="100" height="100">
+    </header>
 
-        <form action="ข้อ 5 manage product&service.html" class="column">
-            <input type="text" name="Search" placeholder="SEARCH "><a href="ข้อ 5 manage product&service.html"></a><button type="submit">go</button></a>
-        </form><br>
-        
-        <!--สร้าง section เพื่อแบ่งเนื้อหาออกเป็นส่วนๆ และใช้ form เพื่อสร้างฟอร์มที่ไว้สำหรับการเพิ่มและลบข้อมูลแอดมิน-->
-        <section>
-            <ul class="ADD&DELdt">
-                <h1>Manage Admin</h1>
-                <!--สร้าง form ของการเพิ่มข้อมูลซึ่งจะมีข้อมูล ชื่อแอดมิน, เบอร์โทรศัพท์, อีเมล, เงินเดือน, รูปภาพแอดมิน, และปุ่มสำหรับการเพิ่มแอดมิน-->
-                    <form action="" method="post">
-                        <fieldset>
-                            <h1>Add Admin Data</h1><br>
-                            
-                            <!--ชื่อแอดมิน-->
-                            <h5 id="amname">Admin Name:</h5>
-                            <input id="name_am" name="name_am" type="text" required="required"><br>
+    <!--ใช้คำสั่ง nav ในการกำหนดเเถบต่างๆ-->
+    <nav>
+        <a href="ข้อ 1 homepage.html"><i class="hm"></i>HOME</a>
+        <a href="ข้อ 5 manage product&service.html"><i class="am"></i>MANAGE PRODUCT & SERVICE</a>
+        <a href="ข้อ 6 manage admin.html"><i class="pa"></i>MANAGE ADMIN</a>
 
-                            <!--เบอร์โทรศัพท์-->
-                            <h5 id="tel">Tel:</h5>
-                            <input type="tel" name="tel_am" id="tel_am" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"  title="Tel: XXX-XXX-XXXX" required="required"><br>
+        <div class="log">
+            <form action="#">
+                <a href="ข้อ 2 login.html"><input class="submit_class" type="button" value="Login"></a>
+            </form>
+        </div>
+    </nav>
 
-                            <!--อีเมล-->
-                            <h5 id="email">Email:</h5>
-                            <input type="email" name="email_am" id="email_am" cols="50" rows="3" required="required"><br>
+    <form action="ข้อ 5 manage product&service.html" class="column">
+        <input type="text" name="Search" placeholder="SEARCH "><a href="ข้อ 5 manage product&service.html"></a><button
+            type="submit">go</button></a>
+    </form><br>
 
-                            <!--หน้าที่-->
-                            <h5 id="duty">Duty:</h5>
-                            <input type="duty" name="duty_am" id="duty_am" cols="50" rows="3" required="required"><br>
-                            
-                            <!--เงินเดือน-->
-                            <h5 id="salary">Salary:</h5>
-                            <input type="number" name="sal_am" id="sal_am" required="required" required="required"> $<br>
+    <!--สร้าง section เพื่อแบ่งเนื้อหาออกเป็นส่วนๆ และใช้ form เพื่อสร้างฟอร์มที่ไว้สำหรับการเพิ่มและลบข้อมูลแอดมิน-->
+    <section>
+        <ul class="ADD&DELdt">
+            <h1>Manage Admin</h1>
+            <!--สร้าง form ของการเพิ่มข้อมูลซึ่งจะมีข้อมูล ชื่อแอดมิน, เบอร์โทรศัพท์, อีเมล, เงินเดือน, รูปภาพแอดมิน, และปุ่มสำหรับการเพิ่มแอดมิน-->
+            <!-- <form method="post"> -->
+            <fieldset>
+                <h1>Add Admin Data</h1><br>
 
-                            <!--รูปภาพ-->
-                            <h5 id="img">Image:</h5>
-                            <input type="file" name="img_am" required="required" id="pro_img" size="40">
+                <!--ชื่อแอดมิน-->
+                <h5 id="amname">Admin Name:</h5>
+                <input id="name_am" name="name_am" type="text" required="required"><br>
 
-                            <!--ปุ่มสำหรับการเพิ่มแอดมิน-->
-                            <h5>&nbsp;</h5>
-                            <br><button type="submit" name="button" id="button" value="ตกลง">Add Admin</button>
-                        </fieldset>
-                    </form>
+                <!--เบอร์โทรศัพท์-->
+                <h5 id="tel">Tel:</h5>
+                <input type="tel" name="tel_am" id="tel_am" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                    title="Tel: XXX-XXX-XXXX" required="required"><br>
 
-                    <!--สร้าง form ของการลบข้อมูลซึ่งจะมีข้อมูล ได้แก่ ชื่อแอดมิน(เพื่อให้ง่ายต่อการลบแอดมิน) และปุ่มสำหรับการลบแอดมิน-->
-                    <form action="" method="post">
-                        <fieldset>
-                            <h1>Delete Admin Data</h1>
-                            <br>
-                            <h5 id="delname">Name Admin:</h5>
-                            <input id="name_am" name="name_am" type="text" required="required">
-                            <br>
-                            <br><button type="submit" name="button" id="button" value="ตกลง">Delete Admin</button>
-                        </fieldset>
-                    </form>
-            </ul>
-            
-            <!-- สร้างตารางอัพเดทข้อมูลของการจัดการแอดมินโดยใช้คำสั่ง table เพื่อสร้างตารางซึ่งมีชื่อคอลัมน์ ได้แก่  ชื่อแอดมิน, เบอร์โทรศัพท์, อีเมล, หน้าที่, เงินเดือน เเละการเพิ่มหรือลดcvf,bo-->
-            <h2>Update Admin Management System</h2>
-            <table class="table1">
-                <tbody><tr>
+                <!--อีเมล-->
+                <h5 id="email">Email:</h5>
+                <input type="email" name="email_am" id="email_am" cols="50" rows="3" required="required"><br>
+
+                <!--หน้าที่-->
+                <h5 id="duty">Duty:</h5>
+                <input type="duty" name="duty_am" id="duty_am" cols="50" rows="3" required="required"><br>
+
+                <!--เงินเดือน-->
+                <h5 id="salary">Salary:</h5>
+                <input type="number" name="sal_am" id="sal_am" required="required" required="required"> $<br>
+
+                <!--รูปภาพ-->
+                <!-- <h5 id="img">Image:</h5>
+                            <input type="file" name="img_am" required="required" id="pro_img" size="40"> -->
+
+                <!--ปุ่มสำหรับการเพิ่มแอดมิน-->
+                <h5>&nbsp;</h5>
+                <br><button type="submit" name="button" id="button" onclick="insertAdmin()" value="ตกลง">Add
+                    Admin</button>
+            </fieldset>
+            <!-- </form> -->
+
+            <!--สร้าง form ของการลบข้อมูลซึ่งจะมีข้อมูล ได้แก่ ชื่อแอดมิน(เพื่อให้ง่ายต่อการลบแอดมิน) และปุ่มสำหรับการลบแอดมิน-->
+            <form action="" method="post">
+                <fieldset>
+                    <h1>Delete Admin Data</h1>
+                    <br>
+                    <h5 id="delname">Name Admin:</h5>
+                    <input id="name_am1" name="name_am" type="text" required="required">
+                    <br>
+                    <br><button type="submit" name="button" id="button" value="ตกลง">Delete Admin</button>
+                </fieldset>
+            </form>
+        </ul>
+
+        <!-- สร้างตารางอัพเดทข้อมูลของการจัดการแอดมินโดยใช้คำสั่ง table เพื่อสร้างตารางซึ่งมีชื่อคอลัมน์ ได้แก่  ชื่อแอดมิน, เบอร์โทรศัพท์, อีเมล, หน้าที่, เงินเดือน เเละการเพิ่มหรือลดcvf,bo-->
+        <h2>Update Admin Management System</h2>
+        <table class="table1">
+            <tbody>
+                <tr>
                     <th>Admin Name</th>
                     <th>Tel</th>
                     <th>Email</th>
@@ -143,33 +148,58 @@
                     <td>-</td>
                     <td><button type="button" id="deldata">DEL</button></td>
                 </tr>
-            </tbody></table>
-        </section><br><br>
+            </tbody>
+        </table>
+    </section><br><br>
 
-        <!--คำสั่ง footer เพื่อใส่ข้อมูลด้านล่างเว็บไซต์ Click this to manage product & service page. เพื่อทำการ link ไปหน้า Manage product & service-->
-        <!--คำสั่ง center จัดให้อยู่ตรงกลาง-->
-        <center><footer>
+    <!--คำสั่ง footer เพื่อใส่ข้อมูลด้านล่างเว็บไซต์ Click this to manage product & service page. เพื่อทำการ link ไปหน้า Manage product & service-->
+    <!--คำสั่ง center จัดให้อยู่ตรงกลาง-->
+    <center>
+        <footer>
             <a class="ft" href="ข้อ 5 manage product&service.html">Click this to manage product & service page.</a>
-        </footer></center><br>
+        </footer>
+    </center><br>
 
-        <!--คำสั่ง footer เพื่อใส่ข้อมูลด้านล่างเว็บไซต์ ได้แก่ More Info และ Social links ซึ่งในที่นี้ยังไม่มีการ link จริงเป็นเพียง UI เท่านั้น-->
-        <footer class="footer">
-            <div class="copy">&copy; 2022 Developer</div>
-            <div class="bottom-links">
-              <div class="links">
+    <!--คำสั่ง footer เพื่อใส่ข้อมูลด้านล่างเว็บไซต์ ได้แก่ More Info และ Social links ซึ่งในที่นี้ยังไม่มีการ link จริงเป็นเพียง UI เท่านั้น-->
+    <footer class="footer">
+        <div class="copy">&copy; 2022 Developer</div>
+        <div class="bottom-links">
+            <div class="links">
                 <span>More Info</span>
                 <a href="#">Home</a>
                 <a href="#">About</a>
                 <a href="#">Contact</a>
-              </div>
-              <div class="links">
+            </div>
+            <div class="links">
                 <span>Social Links</span>
                 <a href="#"><i class="fab fa-facebook"></i></a>
                 <a href="#"><i class="fab fa-twitter"></i></a>
                 <a href="#"><i class="fab fa-instagram"></i></a>
-              </div>
             </div>
-          </footer>
-    
-    </body>
+        </div>
+    </footer>
+
+</body>
+
 </html>
+
+<script src="index.js"></script>
+<script>
+    function insertAdmin() {
+        // console.log("fghjk");
+        const amname = document.querySelector("#name_am").value;
+        const tel = document.querySelector("#tel_am").value;
+        const email = document.querySelector("#email_am").value;
+        const duty = document.querySelector("#duty_am").value;
+        const salary = document.querySelector("#sal_am").value;
+        const data = {
+            amname,
+            tel,
+            email,
+            duty,
+            salary,
+        }
+        // console.log(data);
+        insert(data);
+    }
+</script>
