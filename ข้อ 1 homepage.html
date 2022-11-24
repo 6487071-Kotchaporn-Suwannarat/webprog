@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--link กับไฟล์ external css-->
+        <title>PIOR's Website</title>
+        <link rel="stylesheet" href="gr10(2).css">
+        <link rel="stylesheet" href="homepage.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            .checked {
+                color: orange;
+            }
+        </style>
+    </head>
+
+    <body>
+        <!--ใส่รูปโลโก้บนหน้าเว็บ-->
+        <header>
+            <img src="Pior.jpg" alt="HTML5 Icon" width="100" height="100">
+        </header>
+        <!--link กับไฟล์ html อื่นๆบน nav bar-->
+        <nav>
+            <a href="ข้อ 1 homepage.html"><i class="hm"></i>HOME</a>
+            <a href="ข้อ 3 search.html"><i class="sh"></i>SEARCH</a>
+            <a href="ข้อ 4 product&service.html"><i class="ps"></i>PRODUCT & SERVICE</a>
+            <a href="ข้อ 5 manage product&service.html"><i class="am"></i>MANAGE PRODUCT & SERVICE</a>
+            <a href="ข้อ 6 manage admin.html"><i class="pa"></i>MANAGE ADMIN</a>
+            <a href="ข้อ 7 aboutus.html"><i class="au"></i>ABOUT US</a>
+            
+            <!--สร้าง class log-->
+            <div class="log">
+                <form action = "#">
+                    <!--link กับไฟล์ html login และทำเป็นปุ่ม login-->
+                    <a href="ข้อ 2 login.html"><input class="submit_class" type="button" value="Login"></a>
+                </form>
+            </div>
+        </nav>
+
+        <!--สร้าง class intro-->
+        <div class="intro">
+            <h1>Bread</h1>
+            <p>It's the Simple Pleasures in Life.</p>
+        </div>
+
+        <!--สร้าง class our_story-->
+        <div class="our_story"><h2>PIOR Bakery's story</h2></div>
+        <!--สร้าง class txt1-->
+        <div class="txt1">
+            PIOR Bakery's story is a bakery and beverage business. Great Baking brings happiness to PIOR Bakery customers because we are a great baker. Baking is a highly creative act <br>
+            that combines knowledge, technique, passion, and love to create something that brings happiness to people's lives. We have an enticing menu that invites everyone to savor <br>
+            many flavors either in the bakery section and beverages. 
+        </div><br><br>
+
+        <!--สร้าง class main1-->
+        <div class="main1"><h1>Recommend Menu</h1></div><br><br>
+
+        <!--ใช้ center คุมรูปภาพเพื่อให้อยู่ตรงกลาง-->
+        <center><img class="menu1" src="assets/Bread/4.jpeg"></center><br>
+        <!--สร้าง class M1-->
+        <div class="M1"><h1>Cookie</h1></div><br>
+        <!--ใช้ span เพื่อจัดแต่งข้อความสั้นๆ-->
+        <h1><span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span></h1><br><br>
+
+        <!--สร้าง class location-->
+        <div class="location">
+            Location: Salaya, Nakhon Prathum, Thailand.
+        </div><br><br>
+
+        <!--สร้าง class footer ในส่วนของ footer-->
+        <footer class="footer">
+            <!--สร้าง class copy-->
+            <div class="copy">&copy; 2022 Developer</div>
+            <!--สร้าง class bottom-links-->
+            <div class="bottom-links">
+                <!--สร้าง class links-->
+              <div class="links">
+                <!--ใช้ span เพื่อจัดแต่งข้อความสั้นๆ-->
+                <span>More Info</span>
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+              </div>
+              <!--สร้าง class links-->
+              <div class="links">
+                <!--ใช้ span เพื่อจัดแต่งข้อความสั้นๆ-->
+                <span>Social Links</span>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+              </div>
+            </div>
+        </footer>
+    </body>
+</html>

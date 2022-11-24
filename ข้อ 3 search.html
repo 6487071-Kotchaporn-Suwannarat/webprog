@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Search</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--import bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!--link กับไฟล์ extenal css-->
+    <link rel="stylesheet" href="search.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .checked {
+            color: orange;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!--ใส่รูปโลโก้บนหน้าเว็บ-->
+        <img src="Pior.jpg" alt="HTML5 Icon" width="100" height="100">
+    </header>
+    <nav>
+        <!--link กับไฟล์ html อื่นๆบน nav bar-->
+        <a href="ข้อ 1 homepage.html"><i class="hm"></i>HOME</a>
+        <a href="ข้อ 3 search.html"><i class="sh"></i>SEARCH</a>
+        <a href="ข้อ 4 product&service.html"><i class="ps"></i>PRODUCT & SERVICE</a>
+        <a href="ข้อ 7 aboutus.html"><i class="au"></i>ABOUT US</a>
+
+        <!--สร้าง class log-->
+        <div class="log">
+            <form action = "#">
+                <!--link กับไฟล์ html login และทำเป็นปุ่ม login-->
+                <a href="ข้อ 2 login.html"><input class="submit_class" type="button" value="Login"></a>
+            </form>
+        </div>
+    </nav>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <!--main ใช้กับส่วนสำคัญที่สุดของหน้า-->
+    <main>
+        <!--สร้าง class search-->
+        <div class="search">
+            <form action="ข้อ 4 product&service.html" class="column">
+                <input type="text" name="Search" placeholder="SEARCH"><a href="ข้อ 4 product&service.html"></a><button type="submit">go</button></a>
+            </form>
+            <!--สร้าง class column-->
+            <div class="column">
+                <!--สร้าง class dropdown-->
+                <div class="dropdown">
+                    <!--ทำปุ่ม dropdown-->
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        By Category
+                    </button>
+                    <!--สร้าง class dropdown-menu ซึ่งเป็น list-->
+                    <ul class="dropdown-menu" >
+                        <li><a class="dropdown-item" href="Bakery.html">Bakery</a></li>
+                        <li><a class="dropdown-item" href="Beverage.html">Beverage</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!--สร้าง class column-->
+            <div class="column">
+                <!--สร้าง class dropdown-->
+                <div class="dropdown">
+                    <!--ทำปุ่ม dropdown-->
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        By Rating
+                    </button>
+                    <!--สร้าง class dropdown-menu ซึ่งเป็น list-->
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="5rating.html">
+                            <!--ใช้ span เพื่อจัดแต่งข้อความสั้นๆ-->
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span></a></li>
+                        <li><a class="dropdown-item" href="4rating.html">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span></a></li>
+                        <li><a class="dropdown-item" href="3rating.html">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span></a></li>
+                        <li><a class="dropdown-item" href="2rating.html">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span></a></li>
+                        <li><a class="dropdown-item" href="1rating.html">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star "></span>
+                            <span class="fa fa-star"></span></a></li>
+                    </ul>
+                </div>
+            </div>
+            <!--สร้าง class column-->
+            <div class="column">
+                <!--สร้าง class dropdown-->
+                <div class="dropdown">
+                    <!--ทำปุ่ม dropdown-->
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Promotion & Service
+                    </button>
+                    <!--สร้าง class dropdown-menu ซึ่งเป็น list-->
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="ข้อ 4 product&service.html">ลูกค้าที่สมัครสมาชิกใหม่จะได้รับส่วนลด 10%</a></li>
+                        <li><a class="dropdown-item" href="ข้อ 4 product&service.html">ซื้อของครบ 500 บาท รับส่วนลดทันที 30 บาท</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--สร้าง class footer ในส่วนของ footer-->
+        <footer class="footer">
+            <!--สร้าง class copy-->
+            <div class="copy">&copy; 2022 Developer</div>
+            <!--สร้าง class bottom-links-->
+            <div class="bottom-links">
+                <!--สร้าง class links-->
+              <div class="links">
+                <!--ใช้ span เพื่อจัดแต่งข้อความสั้นๆ-->
+                <span>More Info</span>
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+              </div>
+              <!--สร้าง class links-->
+              <div class="links">
+                <span>Social Links</span>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+              </div>
+            </div>
+        </footer> 
+</body>
+<html>

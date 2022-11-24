@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--กำหนดชื่อ title ของ website-->
+        <title>Product & Service PIOR's Website</title>
+        <!--external css-->
+        <link rel="stylesheet" href="gr10(2).css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!--internal css-->
+        <style>
+            .checked {
+                color: orange;
+            }
+        </style>
+    </head>
+
+    <body>
+        <!--กำหนด header เป็นรูปภาพ logo ของร้าน-->
+        <header>
+            <img src="Pior.jpg" alt="HTML5 Icon" width="100" height="100">
+        </header>
+
+        <!--ใช้คำสั่ง nav ในการกำหนดเเถบต่างๆ-->
+        <nav>
+            <a href="ข้อ 1 homepage.html"><i class="hm"></i>HOME</a>
+            <a href="ข้อ 3 search.html"><i class="sh"></i>SEARCH</a>
+            <a href="ข้อ 4 product&service.html"><i class="ps"></i>PRODUCT & SERVICE</a>
+            <a href="ข้อ 7 aboutus.html"><i class="au"></i>ABOUT US</a>
+            
+            <div class="log">
+                <form action = "#">
+                    <a href="ข้อ 2 login.html"><input class="submit_class" type="button" value="Login"></a>
+                </form>
+            </div>
+        </nav>
+
+        <!--ใช้คำสั่ง ul กำหนดรายการไม่มีลำดับ-->
+        <ul>
+            <!--สร้าง section เพื่อแบ่งเนื้อหาออกเป็นส่วนๆ-->
+            <section>
+                <!--reference: https://getbootstrap.com/docs/4.0/components/card/-->
+
+                <!--คำสั่ง div class="card-group" เพื่อจัดรูปและข้อมูลออกเป็นคอลัมน์ -->
+                <!--ประกอบไปด้วยข้อมูลสินค้าทั้งหมด ได้แก่ Bakery, Beverage ซึ่งข้อมูลแต่ละ card จะมี ชื่อสินค้า, รูปภาพและราคา, เรทติ้ง, ปุ่ม more detail เพื่อลิ้งไปยังหน้ารายละเอียดสินค้าแต่ละสินค้า-->
+
+                <!--3 rating-->
+                <div class="card-group">
+                    <div class="card" style="width: 18 rem;">
+                        <img class="card-img-top" src="assets/Beverage/5.png">
+                        <div class="card-body">
+                            <h5 class="card-title">Coffee Orange <br> 2.45$</h5>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            <br><a href="CoffeeOrange.html"><button>more detail</button></a>
+                        </div>
+                    </div>
+                </div>
+
+                
+
+            </section>
+        </ul>
+
+        <!--คำสั่ง footer เพื่อใส่ข้อมูลด้านล่างเว็บไซต์ ได้แก่ More Info และ Social links ซึ่งในที่นี้ยังไม่มีการ link จริงเป็นเพียง UI เท่านั้น-->
+        <footer class="footer">
+            <div class="copy">&copy; 2022 Developer</div>
+            <div class="bottom-links">
+                <div class="links">
+                    <span>More Info</span>
+                    <a href="#">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Contact</a>
+                </div>
+                <div class="links">
+                    <span>Social Links</span>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </footer>
+        
+    </body>
+</html>

@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--กำหนดชื่อ title ของ website-->
+        <title>Manage Product & Service</title>
+        <!--external css-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="manage product&service.css">
+        <link rel="stylesheet" href="gr10.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!--internal css-->
+        <style>
+            .checked {
+                color: orange;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <!--กำหนด header เป็นรูปภาพ logo ของร้าน-->
+        <header>
+            <img src="Pior.jpg" alt="HTML5 Icon" width="100" height="100">
+        </header>
+        
+        <!--ใช้คำสั่ง nav ในการกำหนดเเถบต่างๆ-->
+        <nav>
+            <a href="ข้อ 1 homepage.html"><i class="hm"></i>HOME</a>
+            <a href="ข้อ 5 manage product&service.html"><i class="am"></i>MANAGE PRODUCT & SERVICE</a>
+            <a href="ข้อ 6 manage admin.html"><i class="pa"></i>MANAGE ADMIN</a>
+
+            <div class="log">
+                <form action = "#">
+                    <a href="ข้อ 2 login.html"><input class="submit_class" type="button" value="Login"></a>
+                </form>
+            </div>
+        </nav>
+
+        <form action="ข้อ 5 manage product&service.html" class="column">
+            <input type="text" name="Search" placeholder="SEARCH "><a href="ข้อ 5 manage product&service.html"></a><button type="submit">go</button></a>
+        </form><br>
+
+        <!--สร้าง section เพื่อแบ่งเนื้อหาออกเป็นส่วนๆ และใช้ form เพื่อสร้างฟอร์มที่ไว้สำหรับการเพิ่มเเละลบข้อมูลสินค้า-->
+        <section>
+            <ul class="ADDDELdt">
+                <h1>Manage Product & Service</h1>
+                    <!--สร้าง form ของการเพิ่มข้อมูลซึ่งจะมีข้อมูล ประเภทสินค้า, ชื่อสินค้า, ราคาสินค้า, เรทติ้ง, รายละเอียดสินค้า, รูปภาพสินค้า, และปุ่มสำหรับการเพิ่มสินค้า-->
+                    <form action="" method="post">
+                        <fieldset>
+                            <h1>Add Product & Service Data</h1><br>
+
+                            <!--ประเภทสินค้า-->
+                            <h5 id="type">Type:</h5>
+                            <select name="type_id" id="type_id" required="required">
+                                <option value="">Select Type</option>
+                                <option value="1">Bakery</option>
+                                <option value="2">Beverage</option>
+                            </select><br>
+
+                            <!--ชื่อสินค้า-->
+                            <h5 id="addname">Name Product & Service:</h5>
+                            <input id="name_pro" name="name_pro" type="text" required="required"><br>
+
+                            <!--ราคาสินค้า-->
+                            <h5 id="price">Price:</h5>
+                            <input type="number" name="price_pro" id="price_pro" required="required"> $<br>
+
+                            <!--เรทติ้ง-->
+                            <h5 id="rating">Rating:</h5>
+                            <input type="radio" name="rating_pro" id="rating_pro" required="required" value="5">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span><br>
+                            <input type="radio" name="rating_pro" id="rating_pro" required="required" value="4">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span><br>
+                            <input type="radio" name="rating_pro" id="rating_pro" required="required" value="3">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span><br>
+                            <input type="radio" name="rating_pro" id="rating_pro" required="required" value="2">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span><br>
+                            <input type="radio" name="rating_pro" id="rating_pro" required="required" value="1">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span><br>
+
+                            <!--รายละเอียดสินค้า-->
+                            <h5 id="detail">Add Detail:</h5>
+                            <textarea name="detail_pro" id="detail_pro" cols="50" rows="3" required="required"></textarea>
+
+                            <!--รูปภาพสินค้า-->
+                            <h5 id="img">Image:</h5>
+                            <input type="file" name="pro_img" required="required" id="pro_img" size="40">
+
+                            <!--ปุ่มสำหรับการเพิ่มสินค้า-->
+                            <h5>&nbsp;</h5>
+                            <br><button type="submit" name="button" id="button" value="ตกลง">Add Product</button>
+                        </fieldset>
+                    </form>
+
+                    <!--สร้าง form ของการลบข้อมูลซึ่งจะมีข้อมูล ได้แก่ ชื่อสินค้า(เพื่อให้ง่ายต่อการลบสินค้า) และปุ่มสำหรับการลบสินค้า-->
+                    <form action="" method="post">
+                        <fieldset>
+                            <h1>Delete Product & Service Data</h1>
+                            <br>
+                            <h5 id="delname">Name Product & Service:</h5>
+                            <input id="pro_name" name="pro_name" type="text" required="required">
+                            <br>
+                            <br><button type="submit" name="button" id="button" value="ตกลง">Delete Product</button>
+                        </fieldset>
+                    </form>
+            </ul>
+
+            <!-- สร้างตารางอัพเดทข้อมูลของการจัดการสินค้าโดยใช้คำสั่ง table เพื่อสร้างตารางซึ่งมีชื่อคอลัมน์ ได้แก่ ประเภทสินค้า, ชื่อสินค้า, ราคาสินค้า, เรทติ้ง, รายละเอียดสินค้า เเละการเพิ่มหรือลดสินค้า -->
+            <h2>Update Product Management System</h2>
+            <table class="table1">
+                <tbody><tr>
+                    <th>Type</th>
+                    <th>Name Product</th>
+                    <th>Price</th>
+                    <th>Rating</th>
+                    <th>Detail</th>
+                    <th>ADD OR DELETE Product</th>
+                </tr>
+
+                <!--สินค้าประเภท Bakery-->
+                <tr>
+                    <td>Bakery</td>
+                    <td>Baguette</td>
+                    <td>2.42$</td>
+                    <td><span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span></td>
+                    <td>Marquette or French bread with a stick
+                        shape that is more than 2 feet (24 inches) long, it is remembered by many foodies. The
+                        texture on the outside is crispy, the inside is soft and sticky, not firm.</td>
+                    <td><button type="button" id="adddata">ADD</button></td>
+                </tr>
+                <tr>
+                    <td>Bakery</td>
+                    <td>Brioche</td>
+                    <td>1.24$</td>
+                    <td><span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span></td>
+                    <td>Soft and buttery bread French
+                        nationality originated in 1404, 
+                        nowadays people like to use brioche to create
+                        French toast.</td>
+                    <td><button type="button" id="adddata">ADD</button></td>
+                </tr>
+                <tr>
+                    <td>Bakery</td>
+                    <td>Bagels</td>
+                    <td>1.24$</td>
+                    <td><span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span></td>
+                    <td>Soft and firm, ring-shaped bread topped
+                        with sesame seeds. Originated from Poland made from wheat flour Bring to boiling water
+                        before baking until browned. There are many types of bagels, both made from rye. or flour
+                        from whole grains Some put cinnamon or blueberries. Traditional bagels are often served with
+                        smoked salmon and cream cheese.</td>
+                    <td><button type="button" id="adddata">ADD</button></td>
+                </tr>
+                <tr>
+                    <td>Bakery</td>
+                    <td>Cookie</td>
+                    <td>3.83$</td>
+                    <td><span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span></td>
+                    <td>Green tea cookies with red bean filling,
+                        green tea scented cookies, rich taste with real Japanese green tea, homemade cookies, crispy
+                        outside cookies soft in sweet red bean filling, clean, fresh from the oven.</td>
+                    <td><button type="button" id="adddata">ADD</button></td>
+                </tr>
+                <tr>
+                    <td>Bakery</td>
+                    <td>Cheesecake</td>
+                    <td>4.11$</td>
+                    <td><span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span></td>
+                    <td>Sweet Lover's Sweet Milk The bottom
+                        base
+                        is a crunchy biscuit. Eat along with the smooth cake texture. The sweet and sour taste is
+                        combined with the creamy texture. Garnished with fresh strawberries.</td>
+                    <td><button type="button" id="adddata">ADD</button></td>
+                </tr>
+                <tr>
+                    <td>Bakery</td>
+                    <td>Red Velvet Cake</td>
+                    <td>4.66$</td>
+                    <td><span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span></td>
+                    <td>A special homemade cake the
+                        texture
+                        of the red cake is velvety soft. A delicious, lightly sweet cake with good quality cream
+                        cheese
+                        imported from America.</td>
+                    <td><button type="button" id="adddata">ADD</button></td>
+                </tr>
+
+                <!--สินค้าประเภท Beverage-->
+                <tr>
+                    <td>Beverage</td>
+                    <td>Cappuccino</td>
+                    <td>2.90$</td>
+                    <td><span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span></td>
+                    <td>Cappuccino is an espresso blend. Perfectly
+                        beaten with warm milk froth. strong flavor but not sour and has a slightly sweet taste from
+                        milk.</td>
+                    <td><button type="button" id="adddata">ADD</button></td>
+                </tr>
+                <tr>
+                    <td>Beverage</td>
+                    <td>Iced Cocoa</td>
+                    <td>2.45$</td>
+                    <td><span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span></td>
+                    <td>It has the aroma of cocoa powder. It has a mellow
+                        flavor that is not too sweet and not too bitter.</td>
+                    <td><button type="button" id="adddata">ADD</button></td>
+                </tr>
+                <tr>
+                    <td>Beverage</td>
+                    <td>Matcha Latte</td>
+                    <td>2.90$</td>
+                    <td><span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span></td>
+                    <td>The soft and smooth texture of premium grade
+                        matcha. Indulge in the taste of authentic Japanese green tea.</td>
+                    <td><button type="button" id="adddata">ADD</button></td>
+                </tr>
+                <tr>
+                    <td>Beverage</td>
+                    <td>Coffee Orange</td>
+                    <td>2.45$</td>
+                    <td><span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span></td>
+                    <td>It is a group drink of coftel or coffee mixed
+                        with fruit juices.</td>
+                    <td><button type="button" id="adddata">ADD</button></td>
+                </tr>
+                <tr>
+                    <td>Beverage</td>
+                    <td>Milk Green Tea</td>
+                    <td>2.45$</td>
+                    <td><span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span></td>
+                    <td>Milk green tea is made from the tops of tea
+                        leaves that have been prepared with a unique recipe. Has outstanding features thus giving a
+                        rich flavor and aroma like no other.</td>
+                    <td><button type="button" id="adddata">ADD</button></td>
+                </tr>
+                <tr>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td><button type="button" id="deldata">DEL</button></td>
+                </tr>
+            </tbody></table>
+        </section><br><br>
+
+        <!--คำสั่ง footer เพื่อใส่ข้อมูลด้านล่างเว็บไซต์ Click this to manage admin page. เพื่อทำการ link ไปหน้า Manage Admin-->
+        <!--คำสั่ง center จัดให้อยู่ตรงกลาง-->
+        <center><footer>
+            <a class="ft" href="ข้อ 6 manage admin.html">Click this to manage admin page.</a>
+        </footer></center><br>
+
+        <!--คำสั่ง footer เพื่อใส่ข้อมูลด้านล่างเว็บไซต์ ได้แก่ More Info และ Social links ซึ่งในที่นี้ยังไม่มีการ link จริงเป็นเพียง UI เท่านั้น-->
+        <footer class="footer">
+            <div class="copy">&copy; 2022 Developer</div>
+            <div class="bottom-links">
+              <div class="links">
+                <span>More Info</span>
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+              </div>
+              <div class="links">
+                <span>Social Links</span>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+              </div>
+            </div>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,218 @@
+/* CSS for body */
+body {
+  font-family: sans-serif;
+}
+
+/* CSS for header */
+header {
+  background-color: rgb(213, 173, 140);
+  text-align: center;
+  color: white;
+}
+
+/* CSS for class intro */
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 520px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: larger;
+  color: rgb(255, 255, 255);
+  background: url("made.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* CSS for tag h1 */
+h1 {
+  padding: 20px;
+  margin-bottom: 0px;
+}
+
+/* CSS for tag h2 */
+h2{
+  font-family: Garamond;
+  color: rgb(212, 187, 155);
+}
+
+/* CSS for nav bar */
+nav {
+  background-color: rgb(246, 192, 127);
+  margin-top: 1 px;
+  margin: 0px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+nav a {
+  display: block;
+  float: left;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* เมื่อนำเมาส์ไปวางจะกระพริบๆ */
+nav a:hover {
+  color: #ff8d46;
+}
+
+/* CSS for class our_story */
+.our_story{
+  margin-top: 3%;
+  margin-right: 15%;
+  margin-left: 8%;
+  font-size: 25px;
+}
+
+/* CSS for class txt1 */
+.txt1{
+  margin-left: 8%;
+  font-family: Garamond;
+  font-size: larger;
+}
+
+/* CSS for class M1 */
+.M1 {
+  font-size: medium;
+}
+
+/* CSS for class location */
+.location{
+  margin-left: 8%;
+  font-family: Garamond;
+  font-size: larger;
+}
+
+
+/* CSS for Login Page */
+h1 {
+  letter-spacing: 1.5vw;
+  font-family: 'system-ui';
+  text-transform: uppercase;
+  text-align: center;
+}
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 75vh;
+  width: 100%;
+  background: url(BackgroundBakery.jpg) no-repeat center center;
+  background-size: cover;
+}
+.form_class {
+  width: 500px;
+  padding: 40px;
+  border-radius: 8px;
+  background-color: white;
+  font-family: 'system-ui';
+  box-shadow: 5px 5px 10px rgb(0,0,0,0.3);
+}
+.login_title{
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'system-ui';
+}
+.form_div {
+  text-transform: uppercase;
+}
+.form_div > label {
+  letter-spacing: 3px;
+  font-size: 1rem;
+}
+.field_class {
+  width: 100%;
+  border-radius: 6px;
+  border-style: solid;
+  border-width: 1px;
+  padding: 5px 0px;
+  text-indent: 6px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-family: 'system-ui';
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+}
+.submit_class {
+  border-style: none;
+  border-radius: 5px;
+  background-color: #FFE6D4;
+  padding: 8px 20px;
+  font-family: 'system-ui';
+  text-transform: uppercase;
+  letter-spacing: .8px;
+  display: block;
+  margin: auto;
+  margin-top: 10px;
+  box-shadow: 2px 2px 5px rgb(0,0,0,0.2);
+  cursor: pointer;
+}
+
+/* CSS for footer */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(213, 173, 140);
+  padding: 40px 80px;
+}
+
+.footer .copy {
+  color: #fff;
+}
+
+.bottom-links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 40px 0;
+}
+
+.bottom-links .links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 40px;
+}
+
+.bottom-links .links span {
+  font-size: 20px;
+  color: #fff;
+  text-transform: uppercase;
+  margin: 10px 0;
+}
+
+.bottom-links .links a {
+  text-decoration: none;
+  color: #5c5a5a;
+  padding: 10px 20px;
+}
+
+/* ใช้สำหรับกำหนดเมื่อปรับขนาดของหน้าจอ */
+@media screen and (min-width: 768px){
+  nav{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+  }
+  .container{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+  }
+  .column{
+      float: left;
+      width: 26%;
+      height: 100%;
+  }
+}

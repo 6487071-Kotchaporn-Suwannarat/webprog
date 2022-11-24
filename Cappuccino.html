@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--กำหนดชื่อ title ของ website-->
+        <title>Product & Service (Cappuccino)</title>
+        <!--external css-->
+        <link rel="stylesheet" href="gr10(2).css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!--internal css-->
+        <style>
+            .checked {
+                color: orange;
+            }
+
+            h1 {
+                border-width: 20px;
+                border-style: dashed;
+                border-color: black;
+                border-radius: 20px;
+
+                padding-bottom: 20px;
+                margin: 300px;
+            }
+        </style>
+
+    </head>
+
+    <body>
+        <!--กำหนด header เป็นรูปภาพ logo ของร้าน-->
+        <header>
+            <img src="Pior.jpg" alt="HTML5 Icon" width="100" height="100">
+        </header>
+
+        <!--ใช้คำสั่ง nav ในการกำหนดเเถบต่างๆ-->
+        <nav>
+            <a href="ข้อ 1 homepage.html"><i class="hm"></i>HOME</a>
+            <a href="ข้อ 3 search.html"><i class="sh"></i>SEARCH</a>
+            <a href="ข้อ 4 product&service.html"><i class="ps"></i>PRODUCT & SERVICE</a>
+            <a href="ข้อ 5 manage product&service.html"><i class="am"></i>MANAGE PRODUCT & SERVICE</a>
+            <a href="ข้อ 6 manage admin.html"><i class="pa"></i>MANAGE ADMIN</a>
+            <a href="ข้อ 7 aboutus.html"><i class="au"></i>ABOUT US</a>
+            
+            <div class="log">
+                <form action = "#">
+                    <a href="ข้อ 2 login.html"><input class="submit_class" type="button" value="Login"></a>
+                </form>
+            </div>
+        </nav>
+
+        <!--สร้าง div และ section เพื่อแบ่งเนื้อหาออกเป็นส่วนๆ-->
+        <div class="Cappuccino">
+            <section>
+                <!--https://getbootstrap.com/docs/4.0/components/card/-->
+                <!--ประกอบไปด้วยข้อมูลสินค้าทั้งหมด ได้แก่ ข้อมูลของสินค้า, ราคา, รายละเอียด, เรตติ้ง, ปุ่ม back เพื่อลิ้งค์ไปยัง file Beverage.html-->
+                <div class="card-group">
+                    <div class="card" style="width: 18 rem;">
+                        <img class="card-img-top" src="assets/Beverage/1.png">
+                        <div class="card-body">
+                            <h5 class="card-title">Cappuccino<br><br>2.90$<br>Cappuccino is an espresso blend. Perfectly
+                                beaten with warm milk froth. strong flavor but not sour and has a slightly sweet taste from
+                                milk.</h5>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            <br><a href="Beverage.html"><button>back</button></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--คำสั่ง footer เพื่อใส่ข้อมูลด้านล่างเว็บไซต์ ได้แก่ More Info และ Social links ซึ่งในที่นี้ยังไม่มีการ link จริงเป็นเพียง UI เท่านั้น-->
+            <footer class="footer">
+                <div class="copy">&copy; 2022 Developer</div>
+                <div class="bottom-links">
+                    <div class="links">
+                        <span>More Info</span>
+                        <a href="#">Home</a>
+                        <a href="#">About</a>
+                        <a href="#">Contact</a>
+                    </div>
+                    <div class="links">
+                        <span>Social Links</span>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </footer>
+    </body>
+
+</html>

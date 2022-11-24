@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--link กับไฟล์ external css-->
+        <title>Log-in PIOR's Website</title>
+        <link rel="stylesheet" href="login.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    </head>
+
+    <body>
+        <header>
+            <!--ใส่รูปโลโก้บนหน้าเว็บ-->                                                  
+            <img src="Pior.jpg" alt="HTML5 Icon" width="100" height="100">
+        </header>
+        <!--link กับไฟล์ html อื่นๆบน nav bar-->
+        <nav>
+            <a href="ข้อ 1 homepage.html"><i class="hm"></i>HOME</a>
+            <a href="ข้อ 5 manage product&service.html"><i class="am"></i>MANAGE PRODUCT & SERVICE</a>
+            <a href="ข้อ 6 manage admin.html"><i class="pa"></i>MANAGE ADMIN</a>
+
+            <!--สร้าง class log-->
+            <div class="log">
+                <form action = "#">
+                    <!--link กับไฟล์ html login และทำเป็นปุ่ม login-->
+                    <a href="ข้อ 2 login.html"><input class="submit_class" type="button" value="Login"></a>
+                </form>
+            </div>
+        </nav>
+       
+        <!--main ใช้กับส่วนสำคัญที่สุดของหน้า-->
+        <main>
+            <form id="/login_form" class="form_class" action="login/login-access.php">
+                <!--สร้าง class login_title-->
+                <div class="login_title">LOGIN</div><br>
+                <!--สร้าง class form_div-->
+                <div class="form_div">
+                    <label>Email:</label>
+                    <input class="field_class" name="login_txt" type="email" placeholder="Your Email" required>
+                    <label>Password:</label>
+                    <input id="password" class="field_class" name="password_txt" type="password" placeholder="Your Password" required>
+                    <!--link กับไฟล์ html homepage และทำเป็นปุ่ม login-->
+                    <a href="ข้อ 1 homepage.html"><input class="submit_class" type="button" value="Login"></a>
+                </div>
+
+                <!--สร้าง class info_div-->
+                <div class="info_div">
+                    <p>Admin<a href="register/reg-form.php">Log in for admin</a></p>
+                </div>
+            </form>
+        </main>
+
+        <!--สร้าง class footer ในส่วนของ  footer-->
+        <footer class="footer">
+            <!--สร้าง class copy-->
+            <div class="copy">&copy; 2022 Developer</div>
+            <!--สร้าง class bottom-links-->
+            <div class="bottom-links">
+                <!--สร้าง class links-->
+              <div class="links">
+                <!--ใช้ span เพื่อจัดแต่งข้อความสั้นๆ-->
+                <span>More Info</span>
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+              </div>
+              <!--สร้าง class links-->
+              <div class="links">
+                <span>Social Links</span>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+              </div>
+            </div>
+        </footer>    
+    </body>
+</html>

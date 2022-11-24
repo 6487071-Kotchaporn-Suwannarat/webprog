@@ -1,0 +1,141 @@
+/* CSS for body */
+body {
+  font-family: sans-serif;
+}
+
+/* CSS for header */
+header {
+  background-color: rgb(213, 173, 140);
+  text-align: center;
+  color: black;
+}
+
+/* CSS for nav bar */
+nav {
+  background-color: rgb(246, 192, 127);
+  margin-top: 1 px;
+  margin: 0px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+nav a {
+  display: block;
+  float: left;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #ff8d46;
+}
+
+/* กำหนดทั้งหมดให้เข้ามาอยู่ในบรรดทัดเดียวกัน */
+nav ul {
+  margin:0;
+  padding:0;
+  list-style-type:none;
+  display:inline-block;
+}
+
+
+/* CSS for h1,h2 */
+h1{
+  border-style:solid;
+  padding: 3px;
+  border-width: 2px;
+  background-color: antiquewhite;
+  }
+
+h2{
+  font-family: Arial, sans-serif ;
+  text-align: center;
+  border-style:solid;
+  padding: 3px;
+  border-width: 2px;
+  background-color: rgb(253, 237, 196);
+}
+
+/*-------------------table------------------*/
+/*กำหนดตารางใส่ข้อมูลของcvf,bo*/
+.table1 {
+    margin: auto;
+    font-family: arial, sans-serif;
+    border-collapse:collapse;
+    width: 100%;
+}
+
+/*ใช้กำหนดอักษรทั้งหมดในตาราง*/
+.table1 td,.table1 th {
+    border: 4px solid #ba945f;
+    background-color: rgb(255, 243, 227);
+    text-align: center;
+    padding: 8px;
+}
+
+/*-----------กำหนดขนาดของ section-----------*/
+section{
+  margin:auto;
+  width: 75%; 
+}
+
+/*----------------ความโค้งมนของปุ่มกด---------------*/
+button{
+    border-radius: 10px;
+}
+
+/*-----------------ใช้เพื่อออกเเบบให้ซ่อนเเบบสอบถามได้------------*/
+/*มีเพื่อให้ค้างหน้าเเบบสอบถามได้นานๆ*/
+ul.a1,ul.d1{
+  position: relative;/*ตัวนี้เป็นการบอกให้ค้างเเบบสอบถามนานๆ*/
+  display: inline-block;/*ให้เรียงเป็นเเนวนอน*/
+}
+
+/*เมื่อนำเมาส์ไปวางก็จะเกิดblockขึ้นมา*/
+ul.a1:hover li,ul.d1:hover li {
+  display:block;
+}
+
+ul.a1 li,ul.d1 li{
+  display:none;/*ไม่ต้องมีเป็นการกำหนดสีกับลูกเล่นตอน block เด้งออกมา*/
+  position:absolute;/*ให้สามารถทับตารางได้*/
+  left:0;
+  background:#f0cc78;
+  float:left;
+}
+
+.ft{
+  color: #ff8d46;
+  font-family: Arial, sans-serif ;
+  text-align: center;
+  border-style:solid;
+  padding: 3px;
+  border-width: 2px;
+  background-color: rgb(253, 237, 196);
+}
+
+
+/* ใช้สำหรับกำหนดเมื่อปรับขนาดของหน้าจอ */
+@media screen and (min-width: 768px){
+  nav{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+  }
+  .container{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+  }
+  .column{
+      float: left;
+      width: 26%;
+      height: 100%;
+  }
+}
+

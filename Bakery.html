@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--กำหนดชื่อ title ของ website-->
+        <title>Product & Service (Bakery)</title>
+        <!--external css-->
+        <link rel="stylesheet" href="gr10(2).css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!--internal css-->
+        <style>
+            .checked {
+                color: orange;
+            }
+
+            h1 {
+                border-width: 20px;
+                border-style: dashed;
+                border-color: black;
+                border-radius: 20px;
+
+                padding-bottom: 20px;
+                margin: 300px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <!--กำหนด header เป็นรูปภาพ logo ของร้าน-->
+        <header>
+            <img src="Pior.jpg" alt="HTML5 Icon" width="100" height="100">
+        </header>
+
+        <!--ใช้คำสั่ง nav ในการกำหนดเเถบต่างๆ-->
+        <nav>
+            <a href="ข้อ 1 homepage.html"><i class="hm"></i>HOME</a>
+            <a href="ข้อ 3 search.html"><i class="sh"></i>SEARCH</a>
+            <a href="ข้อ 4 product&service.html"><i class="ps"></i>PRODUCT & SERVICE</a>
+            <a href="ข้อ 5 manage product&service.html"><i class="am"></i>MANAGE PRODUCT & SERVICE</a>
+            <a href="ข้อ 6 manage admin.html"><i class="pa"></i>MANAGE ADMIN</a>
+            <a href="ข้อ 7 aboutus.html"><i class="au"></i>ABOUT US</a>
+            
+            <div class="log">
+                <form action = "#">
+                    <a href="ข้อ 2 login.html"><input class="submit_class" type="button" value="Login"></a>
+                </form>
+            </div>
+        </nav>
+
+        <!--ใช้คำสั่ง ul กำหนดรายการไม่มีลำดับ และ section เพื่อแบ่งเนื้อหาออกเป็นส่วนๆของสินค้าประเภท Bakery ทั้งหมด-->
+        <ul>
+            <section>
+                <!--https://getbootstrap.com/docs/4.0/components/card/-->
+                <div class="card-group">
+                    <div class="card" style="width: 18 rem;">
+                        <img class="card-img-top" src="assets/Bread/1.jpg">
+                        <div class="card-body">
+                            <h5 class="card-title">Baguette<br>6 Pieces/2.42$</h5>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <br><a href="Baguette.html"><button>more detail</button></a>
+                        </div>
+                    </div>
+
+                    <div class="card" style="width: 18 rem;">
+                        <img class="card-img-top" src="assets/Bread/2.jpg">
+                        <div class="card-body">
+                            <h5 class="card-title">Brioche<br>1 Pieces/1.24$</h5>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <br><a href="Brioche.html"><button>more detail</button></a>
+                        </div>
+                    </div>
+
+                    <div class="card" style="width: 18 rem;">
+                        <img class="card-img-top" src="assets/Bread/3.jpg">
+                        <div class="card-body">
+                            <h5 class="card-title">Bagels<br>1 Pieces/1.24$</h5> <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <br><a href="Bagels.html"><button>more detail</button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-group">
+                    <div class="card" style="width: 18 rem;">
+                        <img class="card-img-top" src="assets/Bread/4.jpeg">
+                        <div class="card-body">
+                            <h5 class="card-title">Cookie<br>10 Pieces/3.83$</h5>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <br><a href="cookie.html"><button>more detail</button></a>
+                        </div>
+                    </div>
+
+                    <div class="card" style="width: 18 rem;">
+                        <img class="card-img-top" src="assets/Bread/5.jpg">
+                        <div class="card-body">
+                            <h5 class="card-title">Cheesecake<br>1 Pieces/4.11$ </h5>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <br><a href="Cheesecake.html"><button>more detail</button></a>
+                        </div>
+                    </div>
+
+                    <div class="card" style="width: 18 rem;">
+                        <img class="card-img-top" src="assets/Bread/6.jpeg">
+                        <div class="card-body">
+                            <h5 class="card-title">Red Velvet Cake<br>1 Pieces/4.66$</h5>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <br><a href="RedVelvetCake.html"><button>more detail</button></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--คำสั่ง footer เพื่อใส่ข้อมูลด้านล่างเว็บไซต์ ได้แก่ More Info และ Social links ซึ่งในที่นี้ยังไม่มีการ link จริงเป็นเพียง UI เท่านั้น-->
+            <footer class="footer">
+                <div class="copy">&copy; 2022 Developer</div>
+                <div class="bottom-links">
+                    <div class="links">
+                        <span>More Info</span>
+                        <a href="#">Home</a>
+                        <a href="#">About</a>
+                        <a href="#">Contact</a>
+                    </div>
+                    <div class="links">
+                        <span>Social Links</span>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </footer>
+    </body>
+
+</html>
