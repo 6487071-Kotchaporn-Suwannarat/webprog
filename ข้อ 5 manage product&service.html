@@ -51,11 +51,7 @@
 
                             <!--ประเภทสินค้า-->
                             <h5 id="type">Type:</h5>
-                            <select name="type_id" id="type_id" required="required">
-                                <option value="">Select Type</option>
-                                <option value="1">Bakery</option>
-                                <option value="2">Beverage</option>
-                            </select><br>
+                            <input id="name_type" name="name_type" type="text" required="required"><br>
 
                             <!--ชื่อสินค้า-->
                             <h5 id="addname">Name Product & Service:</h5>
@@ -63,48 +59,16 @@
 
                             <!--ราคาสินค้า-->
                             <h5 id="price">Price:</h5>
-                            <input type="number" name="price_pro" id="price_pro" required="required"> $<br>
+                            <input type="number" name="price_pro" type="float" id="price_pro" required="required"> $<br>
 
                             <!--เรทติ้ง-->
                             <h5 id="rating">Rating:</h5>
-                            <input type="radio" name="rating_pro" id="rating_pro" required="required" value="5">
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span><br>
-                            <input type="radio" name="rating_pro" id="rating_pro" required="required" value="4">
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star"></span><br>
-                            <input type="radio" name="rating_pro" id="rating_pro" required="required" value="3">
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span><br>
-                            <input type="radio" name="rating_pro" id="rating_pro" required="required" value="2">
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span><br>
-                            <input type="radio" name="rating_pro" id="rating_pro" required="required" value="1">
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span><br>
+                            <input id="rating_pro" name="rating_pro" type="int" required="required"><br>
+                          <br>
 
                             <!--รายละเอียดสินค้า-->
                             <h5 id="detail">Add Detail:</h5>
-                            <textarea name="detail_pro" id="detail_pro" cols="50" rows="3" required="required"></textarea>
-
-                            <!--รูปภาพสินค้า-->
-                            <h5 id="img">Image:</h5>
-                            <input type="file" name="pro_img" required="required" id="pro_img" size="40">
+                            <textarea name="detail_pro" id="detail_pro" type="text" cols="50" rows="3" required="required"></textarea>
 
                             <!--ปุ่มสำหรับการเพิ่มสินค้า-->
                             <h5>&nbsp;</h5>
